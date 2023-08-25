@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Justine Frigo</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Justine Frigo</h1>
@@ -11,7 +12,9 @@
       <q>Change your thoughts, and you change your world</q> Norman Vincent
       Peale
     </p>
-    <img src="./Book.jpg" alt="Books" style="width: 50%" />
+    <div class="image">
+      <img src="./Book.jpg" alt="Books" />
+    </div>
     <h2>I'm a little bookworm in a sea of gamers</h2>
     <table>
       <caption>
@@ -31,10 +34,15 @@
       </tr>
       <tr>
         <td>Pineapple on pizza</td>
-        <td><s>Yes</s> / No</td>
+        <td><label for="yes">Yes</label>
+          <input type="checkbox" disabled id="yes" name="yes" value="yes">
+          <label for="no">No</label>
+          <input type="checkbox" checked disabled id="no" name="no" value="no">
+        </td>
       </tr>
     </table>
     <h2>Hobbies</h2>
+    <div class="list">
     <ul>
       <li>Literature</li>
       <li>Manga</li>
@@ -47,12 +55,23 @@
       </ul>
       <li>Series</li>
     </ul>
+    </div>
     <h2>You can always count on me when...</h2>
     <p>... you're struggling.</p>
     <h2>A funny story</h2>
-    <p>When I was a child, I thought that people were taking a "sympatical" year, when it was actually a "sabbatical" year. Which sounded funny and cool to me !</p>
+    <p>
+      When I was a child, I thought that people were taking a "sympatical" year,
+      when it was actually a "sabbatical" year. Which sounded funny and cool to
+      me !
+    </p>
     <h4>TL;DR</h4>
     <p>I mixed up "sympatical" and "sabbatical" year.</p>
-    <footer><a href="https://github.com/vdourson2/markdown-challenge">&lt;&lt; previous</a> || JUSTINE FRIGO || <a href="https://github.com/Carole-GRD/markdown-challenge">next >></a></footer>
+    <footer>
+      <a href="https://github.com/vdourson2/markdown-to-html" target="_blank"
+        >&lt;&lt; previous</a
+      >
+      || JUSTINE FRIGO ||
+      <a href="https://github.com/Carole-GRD/markdown-to-html" target="_blank">next &gt;&gt;</a>
+    </footer>
   </body>
 </html>

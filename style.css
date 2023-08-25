@@ -1,0 +1,153 @@
+body {
+  background-color: black;
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  font-size: 120%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 300%;
+  text-align: center;
+  color: #f09537;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #f09537;
+}
+
+.image {
+  text-align: center;
+}
+
+img {
+  width: 30%;
+  display: block;
+  margin: 3% auto;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+q {
+  font-style: italic;
+}
+
+h2 {
+  font-size: 200%;
+  text-align: center;
+  color: #f09537;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+h4 {
+  font-size: 130%;
+  text-align: center;
+  color: #f09537;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+footer {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-top: 1px solid #f09537;
+}
+
+.list {
+  margin: 0 auto;
+  width: fit-content;
+  font-size: 110%;
+}
+
+li {
+  line-height: 28px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 30%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+caption {
+  font-size: 130%;
+  font-weight: bold;
+  text-align: center;
+  background-color: black;
+  padding: 5px;
+}
+
+tr {
+  background-color: black;
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid aliceblue;
+}
+
+td:nth-child(2) {
+  text-align: right;
+}
+
+
+td:nth-child(1) {
+  width: 50%;
+}
+
+/* responsive pour écrans de max 600 px */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 200%;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  caption {
+    font-size: 110%;
+  }
+
+  td {
+    padding: 6px;
+  }
+}
+
+a {
+  color: #f09537;
+  transition: color ease-in-out 300ms;
+}
+
+a:hover {
+  color: #477cfa;
+  transition: color ease-in-out 300ms;
+}
+
+a:visited {
+  color: #f09537;
+  transition: color ease-in-out 300ms;
+}
+
+a:visited:hover {
+  color: #477cfa;
+  transition: color ease-in-out 300ms;
+}
+
+/* responsive pour écrans de 601 à 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  table {
+    width: 80%;
+  }
+}
